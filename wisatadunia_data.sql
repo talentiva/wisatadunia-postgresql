@@ -5,7 +5,7 @@
 -- Dumped from database version 10.9
 -- Dumped by pg_dump version 11.3
 
--- Started on 2019-08-22 13:12:31
+-- Started on 2019-08-22 14:23:39
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -21,7 +21,7 @@ SET row_security = off;
 --
 -- TOC entry 3829 (class 0 OID 22977852)
 -- Dependencies: 202
--- Data for Name: attraction_category; Type: TABLE DATA; Schema: public; Owner: student
+-- Data for Name: attraction_category; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.attraction_category (id, name, file_name) FROM stdin;
@@ -35,7 +35,7 @@ COPY public.attraction_category (id, name, file_name) FROM stdin;
 --
 -- TOC entry 3823 (class 0 OID 22977388)
 -- Dependencies: 196
--- Data for Name: country; Type: TABLE DATA; Schema: public; Owner: student
+-- Data for Name: country; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.country (id, name) FROM stdin;
@@ -47,7 +47,7 @@ ID	Republic of Indonesia
 --
 -- TOC entry 3825 (class 0 OID 22977519)
 -- Dependencies: 198
--- Data for Name: city; Type: TABLE DATA; Schema: public; Owner: student
+-- Data for Name: city; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.city (id, name, short_desc, time_zone, file_name, country_id, temperature_celsius, weather) FROM stdin;
@@ -58,7 +58,7 @@ COPY public.city (id, name, short_desc, time_zone, file_name, country_id, temper
 --
 -- TOC entry 3827 (class 0 OID 22977636)
 -- Dependencies: 200
--- Data for Name: attraction; Type: TABLE DATA; Schema: public; Owner: student
+-- Data for Name: attraction; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.attraction (id, city_id, name, subtitle, description, distance, duration, rank, latitude, longitude, location, time_open, ticket, phone_number, email, website, file_name, attraction_category_id, favorited) FROM stdin;
@@ -71,7 +71,7 @@ COPY public.attraction (id, city_id, name, subtitle, description, distance, dura
 --
 -- TOC entry 3835 (class 0 OID 0)
 -- Dependencies: 201
--- Name: attraction_category_id_seq; Type: SEQUENCE SET; Schema: public; Owner: student
+-- Name: attraction_category_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.attraction_category_id_seq', 3, true);
@@ -80,7 +80,7 @@ SELECT pg_catalog.setval('public.attraction_category_id_seq', 3, true);
 --
 -- TOC entry 3836 (class 0 OID 0)
 -- Dependencies: 199
--- Name: attraction_id_seq; Type: SEQUENCE SET; Schema: public; Owner: student
+-- Name: attraction_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.attraction_id_seq', 1, true);
@@ -89,13 +89,13 @@ SELECT pg_catalog.setval('public.attraction_id_seq', 1, true);
 --
 -- TOC entry 3837 (class 0 OID 0)
 -- Dependencies: 197
--- Name: city_id_seq; Type: SEQUENCE SET; Schema: public; Owner: student
+-- Name: city_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.city_id_seq', 1, true);
 
 
--- Completed on 2019-08-22 13:13:15
+-- Completed on 2019-08-22 14:24:40
 
 --
 -- PostgreSQL database dump complete
